@@ -2,6 +2,10 @@ const getGoals = (req, res) => {
     res.status(200).json({ message: "get goals" });
 };
 const setGoals = (req, res) => {
+    if(! req.body.text1)
+    {
+        res.status(400).json({message: "please add a text field"});
+    }
   res.status(200).json({ message: "set goals" });
 };
 const updateGoals = (req, res) => {
