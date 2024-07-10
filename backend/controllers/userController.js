@@ -1,30 +1,39 @@
-/*
-    3 routes:
-        1) create user
-        2) login
-        3) fetch user info
-*/
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcryptjs");
+const asyncHandler = require("express-async-handler");
+const User = require("../models/userModel");
 
-// POST /api/users
-// public access
-const registerUser = (req, res) => {
-    res.json({ message: "register user" });
-};
+const registerUser = asyncHandler(async (req, res) => {
 
-// POST /api/users/login
-// public access
-const loginUser = (req, res) => {
-    res.json({ message: "login user" });
-};
+    // destructuring input details
+    const {name, email, password} = req.body;
 
-// GET /api/users/me
-// public access
-const getMe = (req, res) => {
+    if(!name || !email || !password){
+        res.status(400);
+        throw new Error("please add all fields");
+    }
+
+    // send error if user already exists
+    const userExists = await User.findOne({email});
+
+    if(userExists){
+        res.status(400);
+        throw new Error("user already exists");
+    }
+
+  res.json({ message: "register user" });
+});
+
+const loginUser = asyncHandler(async (req, res) => {
+  res.json({ message: "login user" });
+});
+
+const getMe = asyncHandler(async (req, res) => {
   res.json({ message: "user data display" });
-};
+});
 
 module.exports = {
   registerUser,
   loginUser,
-  getMe
+  getMe,
 };
