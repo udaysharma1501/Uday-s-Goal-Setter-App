@@ -6,7 +6,7 @@ const connectDB = async () => {
         const conn = await mongoose.connect(process.env.MONGO_URI);
 
         // .cyan.underline comes from the colors package
-        console.log(`mongoDB connected ${conn.connection.host}`.cyan.underline);
+        console.log(`mongoDB connected ${conn.connection.host}`.yellow.underline);
     } 
     catch (error) 
     {

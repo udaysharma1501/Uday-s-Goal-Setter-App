@@ -2,8 +2,9 @@ const express = require('express');
 const router = express.Router();
 const {getGoals, setGoals, updateGoals, deleteGoals} = require('../controllers/goalController')
 
-// get, post, put and delete can be cascadded this way
-router.route('/').get(getGoals).post(setGoals);
-router.route('/:id').put(updateGoals).delete(deleteGoals);
+const {protect} = require('../middlewear/authMiddelwear');
+
+router.route('/').get(protect, getGoals).post(protect, setGoals);
+router.route('/:id').put(protect, updateGoals).delete(protect, deleteGoals);
 
 module.exports = router;
