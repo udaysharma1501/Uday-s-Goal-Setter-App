@@ -31,7 +31,10 @@ function Register() {
     if(isError){
       toast.error(message)
     }
-    if(isSuccess || user ){
+
+    // if(isSuccess || user)
+    if(isSuccess && user)
+    {
       navigate('/');
     }
 
@@ -55,8 +58,11 @@ function Register() {
     }
     else{
       const userData = {
-        name, email, password
-      }
+        name, 
+        email, 
+        password
+      };
+      
       dispatch(register(userData)); 
     }
   }
