@@ -3,8 +3,8 @@ Steps to run my goal application on your machine:
 1. clone and unzip in desired folder
 
 2. make sure that node and npm are installed by running
-      node -v
-      npm -v
+      `node -v
+      npm -v`
    in the terminal of root directory
 
 3. to install the project dependencies - both the dependencies as well as the devDependencies (list available in package.json) - run
