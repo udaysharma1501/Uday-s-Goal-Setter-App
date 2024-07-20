@@ -33,7 +33,6 @@ const registerUser = asyncHandler(async (req, res) => {
     });
 
     if(user){
-        
         // something was created and everything is okay
         res.status(201).json({
             // _id: user.id,
@@ -76,15 +75,7 @@ const loginUser = asyncHandler(async (req, res) => {
 
 // private access
 const getMe = asyncHandler(async (req, res) => {
-
-    const {_id, name, email} =  await User.findById(req.user.id);
-
-    res.status(200).json({
-        id: _id,
-        name,
-        email,
-    })
-
+    res.status(200).json(req.user);
 });
 
 // generate JWT - this signs a new token with the id passed in and the secret used which would expire in 30 days
