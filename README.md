@@ -7,19 +7,23 @@
       `npm -v`
    in the terminal of root directory
    
-  2.1. if not installed then - install nodejs and npm (prebuilt version from https://nodejs.org/en/download/prebuilt-installer)
+2.1. if not installed then - install nodejs and npm (prebuilt version from https://nodejs.org/en/download/prebuilt-installer)
 
-4. to install the project dependencies - both the dependencies as well as the devDependencies (list available in package.json) - run
+3. to install the project dependencies (list available in package.json) - run
      `npm install`
    in the terminal of root directory
+   
+4. to install the project dependencies of the frontend (list available in package.json) - run
+     `npm install`
+   in the terminal of front directory (switch to frontend by typing `cd ..` in root terminal)
 
 5. `0.0.0.0/0` being added as an ip in my whitelist provides access to all ips 
 
-// 4.1. request to get your ip address permanently added in the whitelist of my atlas mongodb server ip address list - mail me your ip address at udaysharma1501@gmail.com
+5.1. request to get your ip address permanently added in the whitelist of my atlas mongodb server ip address list - mail me your ip address at udaysharma1501@gmail.com
 
 5. run
       `npm run dev`
-   in root directory terminal to (concurrently must be installed to simultaneously run client and server) run the app in your opened broswer - `npm install concurrently` must be run for the same
+   in root directory terminal to run the app in your opened broswer
 
 6. if the dev server doesnt automatically open it - go to yoru desired browser and navigate to 'http://localhost:3000'
 
