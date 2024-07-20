@@ -1,3 +1,7 @@
+## access live website from
+
+https://udays-goalsetter.onrender.com/login
+
 ## Steps to run my goal application on your machine:
 
 1. clone and unzip in desired folder
