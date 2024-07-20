@@ -1,32 +1,24 @@
-Steps to Run My React App:
+Steps to run my goal application on your machine:
 
-Clone and Unzip: Clone the repository or unzip the project folder in your desired location. Use git clone <repository-url> if cloning.
+1. clone and unzip in desired folder
 
-Install Node and npm: Ensure Node.js and npm are installed. Check their versions with:
+2. make sure that node and npm are installed by running
+      node -v
+      npm -v
+   in the terminal of root directory
 
-bash
-Copy code
-node -v
-npm -v
-Install Dependencies: Run the following command to install both dependencies and devDependencies:
+3. to install the project dependencies - both the dependencies as well as the devDependencies (list available in package.json) - run
+     npm install
+   in the terminal of root directory
 
-bash
-Copy code
-npm install
-Whitelist IP Address:
+4. '0.0.0.0/0' being added as an ip in my whitelist provides access to all ips 
 
-For access to the MongoDB server, provide your IP address for whitelist inclusion. Email your IP address to udaysharma1501@gmail.com.
-Note: 0.0.0.0/0 allows access from any IP, which is generally not recommended for production environments.
-Run the Application:
+// 4.1. request to get your ip address permanently added in the whitelist of my atlas mongodb server ip address list - mail me your ip address at udaysharma1501@gmail.com
 
-Ensure concurrently is installed. Run:
-bash
-Copy code
-npm run dev
-This will start both the client and server simultaneously.
-Access the App: If the dev server doesn’t automatically open, navigate to:
+5. run
+      npm run dev
+   in root directory terminal to (concurrently must be installed to simultaneously run client and server) run the app in your opened broswer - npm install concurrently must be installed
 
-arduino
-Copy code
-http://localhost:3000
-Use the App: You can now register, log in, create, fetch, and delete goals.
+6. if the dev server doesnt automatically open it - go to yoru desired browser and navigate to 'http://localhost:3000'
+
+7. congratulations - you can now register and login as a user AND create, fetch and delete your desired goals. 
