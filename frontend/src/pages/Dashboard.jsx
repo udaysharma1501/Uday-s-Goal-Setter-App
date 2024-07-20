@@ -7,6 +7,8 @@ import Spinner from '../components/Spinner';
 import GoalForm from "../components/GoalForm";
 import { getGoals, reset } from "../features/goals/goalSlice";
 
+import GoalItem from "../components/GoalItem";
+
 function Dashboard() {
 
   const navigate = useNavigate();
@@ -48,6 +50,20 @@ function Dashboard() {
       <p>goals dashboard</p>
     </section>
     <GoalForm/>
+
+    <section className="content">
+      {goals.length > 0 ? (
+
+        <div className="goals">
+          {goals.map((goal) => (
+            <GoalItem key={goal._id} goal={goal}/>
+          ))}
+        </div>
+
+
+      ) : (<h3>you haven't set any goals</h3>)}
+    </section>
+
   </>;
 }
 
