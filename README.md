@@ -29,4 +29,6 @@
 
 6. if the dev server doesnt automatically open it - go to yoru desired browser and navigate to 'http://localhost:3000'
 
-7. congratulations - you can now register and login as a user AND create, fetch and delete your desired goals. 
+7. congratulations - you can now register and login as a user AND create, fetch and delete your desired goals.
+
+TECH USED - MERN (MongoDB, ExpressJS, ReactJS, NodeJS) Stack, HTML/CSS, JavaScript, JWT (JSON Web Tokens), Redux, Redux Toolkit, Deployed using render.com
