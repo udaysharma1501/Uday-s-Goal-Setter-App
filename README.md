@@ -8,7 +8,8 @@ Steps to run my goal application on your machine:
 3. to install the project dependencies - both the dependencies as well as the devDependencies (list available in package.json) - run
      npm init
    in the terminal of root directory
-4. request to get your id address temporarily added in the whitelist of my atlas mongodb server ip address list - mail me your ip address at udaysharma1501@gmail.com
+4. '0.0.0.0/0' being added as an ip in my whitelist provides access to all ips 
+4.1. request to get your ip address permanently added in the whitelist of my atlas mongodb server ip address list - mail me your ip address at udaysharma1501@gmail.com
 5. run
       npm run dev
    in root directory terminal to (concurrently must be installed to simultaneously run client and server) run the app in your opened broswer
