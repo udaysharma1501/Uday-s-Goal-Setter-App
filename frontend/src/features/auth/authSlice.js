@@ -22,7 +22,8 @@ export const register = createAsyncThunk(
     
     } catch (error) {
 
-        const message = (error) => (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
+        // const message = (error) => (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
+        const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
         
         return thunkAPI.rejectWithValue(message);
     }
@@ -38,7 +39,7 @@ export const login = createAsyncThunk(
     
     } catch (error) {
 
-        const message = (error) => (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
+        const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
         
         return thunkAPI.rejectWithValue(message);
     }

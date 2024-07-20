@@ -18,7 +18,7 @@ export const createGoal = createAsyncThunk('goals/create', async (goalData, thun
 
     } catch (error) {
 
-        const message = (error) => (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
+        const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
         
         return thunkAPI.rejectWithValue(message);
         
@@ -34,7 +34,7 @@ export const getGoals = createAsyncThunk('goals/getAll', async (_, thunkAPI) => 
         
     } catch (error) {
 
-        const message = (error) => (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
+        const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
         
         return thunkAPI.rejectWithValue(message);
     }
@@ -49,7 +49,7 @@ export const deleteGoal = createAsyncThunk('goals/delete', async (id, thunkAPI) 
 
     } catch (error) {
 
-        const message = (error) => (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
+        const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
         
         return thunkAPI.rejectWithValue(message);
     }
