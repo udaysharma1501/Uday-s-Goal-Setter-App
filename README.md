@@ -1,4 +1,4 @@
-Steps to run my goal application on your machine:
+```Steps to run my goal application on your machine:```
 
 1. clone and unzip in desired folder
 
