@@ -15,7 +15,7 @@
    
 4. to install the project dependencies of the frontend (list available in package.json) - run
      `npm install`
-   in the terminal of front directory (switch to frontend by typing `cd ..` in root terminal)
+   in the terminal of frontend directory (switch to frontend by typing `cd ..` in root terminal)
 
 5. `0.0.0.0/0` being added as an ip in my whitelist provides access to all ips 
 
