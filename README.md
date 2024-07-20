@@ -7,7 +7,7 @@
       `npm -v`
    in the terminal of root directory
    
-      2.1. if not installed then - install nodejs and npm (prebuilt version from https://nodejs.org/en/download/prebuilt-installer)
+2.1. if not installed then - install nodejs and npm (prebuilt version from https://nodejs.org/en/download/prebuilt-installer)
 
 4. to install the project dependencies - both the dependencies as well as the devDependencies (list available in package.json) - run
      `npm install`
