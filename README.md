@@ -1,6 +1,6 @@
 ## access live website from
 
-https://udays-goalsetter.onrender.com/login
+https://udays-goalsetter.onrender.com/login (may take upto 30 seconds to load)
 
 ## Steps to run my goal application on your machine:
 
